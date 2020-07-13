@@ -1,7 +1,7 @@
 from operator import itemgetter
 
 
-class Database(object):
+class Database:
     def __init__(self, path):
         self._file_csv = open(path, 'r')
 
@@ -32,7 +32,7 @@ class Database(object):
 
     @staticmethod
     def ip2int(ip):
-        lst = map(int, ip.split('.'))
+        lst = list(map(int, ip.split('.')))
         res = lst[3] | lst[2] << 8 | lst[1] << 16 | lst[0] << 24
         return res
 
