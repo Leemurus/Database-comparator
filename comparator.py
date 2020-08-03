@@ -63,7 +63,7 @@ class Comparator:
 def compare():
     databases = (
         IP2Location('data/IP2LOCATION-LITE-DB5.CSV'),
-        DBIP('data/dbip-city-lite-2020-07.csv'),
+        DBIP('data/dbip-city-lite-2020-07.mmdb'),
         SypexGeo('data/SxGeoCity.dat'),
         GeoLite('data/GeoLite2-City.mmdb')
     )

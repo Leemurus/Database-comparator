@@ -475,7 +475,7 @@ class SypexGeo(Database):
 
     def _get_main_information(self, location):
         if location.get('info'):
-            return location['info']['city']['name_en']
+            return location['info']['city']['name_ru']
         else:
             return ''
 

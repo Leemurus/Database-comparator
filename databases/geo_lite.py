@@ -13,7 +13,7 @@ class GeoLite(Database):
 
     def _get_main_information(self, location):
         if location:
-            return location.city.names.get('en', '')
+            return location.city.names.get('ru', '')
         else:
             return ''
 
