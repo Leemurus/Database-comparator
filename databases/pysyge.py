@@ -442,11 +442,11 @@ class GeoLocator:
 
         """
         seek = self._get_pos(ip)
-
-        if seek > 0:
-            return self._parse_location(seek, detailed=detailed)
-
-        return {}
+        return seek
+        # if seek > 0:
+        #     return self._parse_location(seek, detailed=detailed)
+        #
+        # return {}
 
     def get_locations(self, ip: Union[List[str], str], detailed: bool = False) -> List[TypeGeoDict]:
         """Returns a list of dictionaries with location data.
